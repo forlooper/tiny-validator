@@ -1,4 +1,4 @@
-little-jquery-form-validator
+little-validator
 ============================
 
-A small, simple, streamlined jQuery-based form validator
+A tiny, simple, streamlined form validator based on jQuery.
