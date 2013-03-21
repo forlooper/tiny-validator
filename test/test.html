@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../css/tiny-validator.css" type="text/css">
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script type="text/javascript" src="../jquery-ui.custom.min.js"></script>
+    <script type="text/javascript" src="../tiny-validator.js"></script>
+
+    <script type="text/javascript">
+        var engine;
+        $(document).ready(function() {
+            engine = new Validator.Engine({$form: $('#testForm')});
+            engine.textField($('#name'), 'Name', 'required', []);
+            engine.textField($('#age'), 'Age', 'min', [18]);
+
+            engine.textField($('#birthdate'), 'Birthdate', 'date', []);
+            engine.radioButtons($('input[name="gender"]'), 'Gender', 'required', []);
+            engine.checkboxes($('input[name="attributes"]'), 'Attributes', 'required', []);
+            engine.textField($('#cash'), 'Cash', 'integer', []);
+            engine.selectField($('#country'), 'Country', 'required', []);
+        });
+    </script>
+</head>
+<body>
+    <form id="testForm">
+        Name: <input type="text" id="name"><br/>
+        Age: <input type="text" id="age"><br/>
+        Birthdate: <input type="text" id="birthdate"><br/>
+        Gender: <input type="radio" id="gender_m" value="M" name="gender">M <input type="radio" id="gender_f" value="F" name="gender">F<br/>
+        Attributes: <input type="checkbox" id="att_strong" name="attributes" value="Strong">Strong <input type="checkbox" id="att_confident" name="attributes" value="Confident">Confident <input type="checkbox" id="att_fast" name="attributes" value="Fast">Fast<br/>
+        Cash: <input type="text" id="cash"><br/>
+        Uni: <select id="country"><option></option></option><option>Melbourne</option><option>Monash</option></select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
