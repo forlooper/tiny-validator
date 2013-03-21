@@ -307,29 +307,3 @@ Type | Description
 Boolean | True if all attached rules pass. False if at least one fail.
  
 ---------------------------------------------
- 
-#### ()
-##### Syntax
-##### Parameter Values
-Parameter | Description
---------- | -----------
- | 
-##### Return Value
-Type | Description
----- | -----------
- | 
- 
----------------------------------------------
- 
-#### ()
-##### Syntax
-##### Parameter Values
-Parameter | Description
---------- | -----------
- | 
-##### Return Value
-Type | Description
----- | -----------
- | 
- 
----------------------------------------------
