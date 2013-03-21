@@ -16,8 +16,6 @@ Add references to the js and css files:
 
 	<script type="text/javascript" src="../jquery.min.js"></script>
     <script type="text/javascript" src="../jquery-ui.custom.min.js"></script>
-    <script type="text/javascript" src="../lib.js"></script>
-    <script type="text/javascript" src="../view.js"></script>
     <script type="text/javascript" src="../tiny-validator.js"></script>
 
 Instantiate an Engine object and add rules to your form controls:
